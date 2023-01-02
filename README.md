@@ -35,9 +35,9 @@ Users should be able to:
 
 ### Links
 
-- Frontend Mentor Solution URL: [](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-Ui_Gyi9_1M)
-- Live Site URL: [](https://monte-dev.github.io/3-intro-component-with-signup-form-FEM/)
-- Repo URL: [](https://github.com/monte-dev/3-intro-component-with-signup-form-FEM)
+- Frontend Mentor Solution URL: [monte-dev](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-Ui_Gyi9_1M)
+- Live Site URL: [monte-dev](https://monte-dev.github.io/3-intro-component-with-signup-form-FEM/)
+- Repo URL: [monte-dev](https://github.com/monte-dev/3-intro-component-with-signup-form-FEM)
 
 ### Built with
 
