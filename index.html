@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <title>3. Intro Component with Signup form - FEM</title>
 </head>
+
 <body>
     <div class="wrapper">
         <section class="intro">
             <h1>Learn to code by watching others</h1>
-            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>            
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                understanding how developers think is invaluable.</p>
         </section>
         <section class="sign-up">
             <div class="offer-banner">
                 <p><span>Try it free 7 days </span>then $20/mo. thereafter</p>
             </div>
             <div class="form-wrapper">
-                <form action="#">
-                    <input type="text" id="firstname" name="name" placeholder="First Name" aria-label="First Name" aria-required="true" required>
-                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" aria-label="Last Name" aria-required="true" required>
-                    <input type="email" id="email" name="email" placeholder="Email Address" aria-label="Email" aria-required="true" required>
-                    <input type="password" id="password" name="password" placeholder="Password" aria-label="Password" aria-required="true" required>
-                    <button type="submit" aria-label="Submit">Claim your free trial</button>
+                <form id="signupForm">
+                    <div class="input-wrapper">
+                        <input type="text" class="input-field" id="firstname" name="name" placeholder="First Name"
+                            aria-label="First Name" aria-required="true" required>
+                        <span id="firstNameError" class="error-message hidden"></span>
+                        <img id="error-icon-first" class="error-icon hidden" src="images/icon-error.svg" alt="">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" class="input-field" id="lastname" name="lastname" placeholder="Last Name"
+                            aria-label="Last Name" aria-required="true" required>
+                        <span id="lastNameError" class="error-message hidden"></span>
+                        <img id="error-icon-last" class="error-icon hidden" src="images/icon-error.svg" alt="">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="email" class="input-field" id="email" name="email" placeholder="Email Address"
+                            aria-label="Email" aria-required="true" required>
+                        <span id="emailError" class="error-message hidden"></span>
+                        <img id="error-icon-email" class="error-icon hidden" src="images/icon-error.svg" alt="">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" class="input-field" id="password" name="password" placeholder="Password"
+                            aria-label="Password" aria-required="true" required>
+                        <span id="passwordError" class="error-message hidden"></span>
+                        <img id="error-icon-password" class="error-icon hidden" src="images/icon-error.svg" alt="">
+                    </div>
+                    <button type="submit" id="submit" aria-label="Submit">Claim your free trial</button>
                     <p>
                         By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
                     </p>
@@ -33,4 +57,5 @@
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
