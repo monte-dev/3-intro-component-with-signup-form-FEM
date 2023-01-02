@@ -1,17 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 $primary-red: hsl(0, 100%, 74%);
 $primary-green: hsl(154, 59%, 51%);
 
-$accentBlue: hsl(248, 32%, 49%);
+$accent-blue: hsl(248, 32%, 49%);
 
 $dark-blue: hsl(249, 10%, 26%);
 $grayish-blue: hsl(246, 25%, 77%);
 
-$main-font: 'Poppins', sans-serif;
-
+$main-font: "Poppins", sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
+  font-family: $main-font;
+  font-size: 16px;
+  margin: 0 auto;
+  background-image: url(/images/bg-intro-mobile.png);
+  background-color: $primary-red;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+// Intro section
+.intro {
+  text-align: center;
+  color: #fff;
+  padding: 80px 30px 30px 30px;
+}
+.intro h1 {
+  padding-bottom: 30px;
+}
+.sign-up {
+  margin: 18px;
+}
+.offer-banner {
+  background-color: $accent-blue;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px 60px;
+  text-align: center;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.offer-banner p {
+  font-weight: 400;
+}
+.offer-banner span {
+  font-weight: 700;
+}
+
+// Sign Up Form
+.form-wrapper {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+.form-wrapper input,
+button {
+  width: 100%;
+  margin: 8px 0px 8px 0px;
+  border-radius: 5px;
+  outline: none;
+}
+.form-wrapper input{
+  padding: 18px;
+  border: none;
+  border: 1px solid $grayish-blue;
+}
+.form-wrapper input::placeholder {
     font-family: $main-font;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.form-wrapper button {
+  padding: 14px 0px 14px 0px;
+  font-family: $main-font;
+  font-size: 15px;
+  color: #fff;
+  background-color: $primary-green;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 -10px 10px -10px rgba(0, 0, 0, 0.25);
+}
+.form-wrapper p {
+    font-size: 12px;
+    padding: 5px 20px;
+    color: $grayish-blue;
+}
+.form-wrapper a {
+    color: $primary-red;
+    font-weight: 700;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+  }
+  .wrapper {
+    height: 100vh;
+  }
+  .intro {
+    padding: 0;
+  }
 }
