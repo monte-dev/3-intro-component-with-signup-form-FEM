@@ -120,6 +120,9 @@ button {
 }
 
 @media (min-width: 768px) {
+  body {
+    background-image: url(/images/bg-intro-desktop.png);
+  }
   .wrapper {
     flex-direction: row;
     padding: 80px;
